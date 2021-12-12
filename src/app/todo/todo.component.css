@@ -1,0 +1,8 @@
+.header-container {
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 8px rgb(0, 0, 0, 0.3);
+}
+

@@ -1,0 +1,12 @@
+.high-priority {
+    background-color: red;
+    color: #FFF;
+}
+
+.medium-priority {
+    background-color: orange;
+}
+
+.low-priority {
+    background-color: green;
+}

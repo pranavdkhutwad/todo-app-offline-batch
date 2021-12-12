@@ -1,0 +1,37 @@
+<!-- Header -->
+<header>
+    <div class="header-container">
+        <div>{{ title | uppercase }}</div>
+    </div>
+</header>
+<!-- main content -->
+<main>
+    <div class="container">
+        <!-- Add Task Form -->
+        <div class="row mt-5 justify-content-center">
+            <div class="col-lg-3 col-md-3 border-right">
+                <app-todo-form (addTaskEvent)="addTask($event)"></app-todo-form>
+            </div>
+            <div class="col-lg-9 col-md-9">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 border-right">
+                        <h5>High Priority Tasks</h5>
+                        <app-todo-task-list [list]="highPriorityTaskList"></app-todo-task-list>
+                    </div>
+                    <div class="col-lg-4 col-md-4 border-right">
+                        <h5>Medium Priority Tasks</h5>
+                        <app-todo-task-list [list]="mediumPriorityTaskList"></app-todo-task-list>
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                        <h5>Low Priority Tasks</h5>
+                        <app-todo-task-list [list]="lowPriorityTaskList"></app-todo-task-list>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+        
+        
+    </div>
+</main>
